@@ -1,16 +1,22 @@
 package homework_3;
 
 import java.util.Scanner;
-
-public class Main {
+// Использование switch-case
+public class Task3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        switchcase();
+        ifelse();
 
-        // Ввод номера месяца
+    }
+    public static Scanner inputData() {
+        return new Scanner(System.in);
+    }
+    public static void switchcase() {
+        System.out.println("Программа определения поры года Switch");
         System.out.print("Введите номер месяца (1-12): ");
-        int month = scanner.nextInt();
+        int month = inputData().nextInt();
 
-        // Использование switch-case для определения поры года
+
         switch (month) {
             case 12:
             case 1:
@@ -34,9 +40,28 @@ public class Main {
                 break;
             default:
                 System.out.println("Неверный номер месяца. Введите число от 1 до 12.");
+                break;
         }
-
-        scanner.close();
     }
-}
+    // Использование ifelse
+        public static void ifelse() {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Программа определения поры года IfElse");
+            System.out.print("Введите номер месяца (1-12): ");
+            int month = inputData().nextInt();
+
+            // Использование if-else-if для определения поры года
+            if (month == 12 || month == 1 || month == 2) {
+                System.out.println("Зима");
+            } else if (month >= 3 && month <= 5) {
+                System.out.println("Весна");
+            } else if (month >= 6 && month <= 8) {
+                System.out.println("Лето");
+            } else if (month >= 9 && month <= 11) {
+                System.out.println("Осень");
+            } else {
+                System.out.println("Неверный номер месяца. Введите число от 1 до 12.");
+            }
+        }
+    }
 
