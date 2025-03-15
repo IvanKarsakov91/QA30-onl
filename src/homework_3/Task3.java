@@ -11,9 +11,10 @@ public class Task3 {
         rainbow();
         oddNumbers();
         fromFivetoOne();
-
-
-
+        Summ();
+        Calculator();
+        Generator();
+        fromtenTotwenty();
 
     }
 
@@ -139,7 +140,46 @@ public class Task3 {
             System.out.println(i);
         }
     }
+    public static void Summ() {
+        System.out.println("Введите положительное число: ");
+        int num = inputData().nextInt();
+     if (num <= 0) {
+        System.out.println("Ошибка: введите положительное число.");
+    } else {
+         int sum = 0;
+         for (int i = 1; i <= num; i++) {
+             sum += i;
+         }
+         System.out.println("Сумма чисел от 1 до " + num + " равна " + sum);
+     }
+    }
+        public static void Calculator() {
+            int number = 7;
+            int limit = 98;
 
+            while (number <= limit) {
+                System.out.print(number + " ");
+                number += 7;
+            }
+        }
+    public static void Generator() {
+        int num = 0;
+        int count = 0;
+
+        while (count < 10) {
+            System.out.print(num + " ");
+            num -= 5;
+            count++;
+        }
+    }
+    public static void fromtenTotwenty () {
+        int num = 10;
+
+        while (num <= 20) {
+            System.out.println("Квадрат числа " + num + " = " + (num * num));
+            num++;
+        }
+    }
 }
 
 
