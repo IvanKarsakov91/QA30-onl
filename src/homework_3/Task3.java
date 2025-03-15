@@ -1,7 +1,7 @@
 package homework_3;
 
 import java.util.Scanner;
-// Использование switch-case
+
 public class Task3 {
     public static void main(String[] args) {
         switchcase();
@@ -53,14 +53,10 @@ public class Task3 {
                 break;
         }
     }
-
-    // Использование ifelse
     public static void ifelse() {
         System.out.println("Программа определения поры года IfElse");
         System.out.print("Введите номер месяца (1-12): ");
         int month = inputData().nextInt();
-
-        // Использование if-else-if для определения поры года
         if (month == 12 || month == 1 || month == 2) {
             System.out.println("Зима");
         } else if (month >= 3 && month <= 5) {
