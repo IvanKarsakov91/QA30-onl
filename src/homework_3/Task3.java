@@ -9,6 +9,8 @@ public class Task3 {
         three();
         temperature();
         rainbow();
+        oddNumbers();
+        fromFivetoOne();
 
 
 
@@ -95,7 +97,7 @@ public class Task3 {
         }
     }
     public static void rainbow(){
-        System.out.println("Цвет радуги");
+        System.out.println("Цвета радуги");
         System.out.print("Введите номер цвета: ");
         int num = inputData().nextInt();
         switch (num) {
@@ -126,8 +128,20 @@ public class Task3 {
 
         }
     }
+    public static void oddNumbers() {
+        System.out.println("Нечетные числа от 1 до 99");
+        for (int i = 1; i < 100; i += 2) {
+            System.out.println(i);
+            }
+        }
+    public static void fromFivetoOne() {
+        for (int i = 5; i >= 1; i--) {
+            System.out.println(i);
+        }
+    }
 
 }
+
 
 
 
