@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         Zero();
+        One();
 
     }
     public static void Zero(){
@@ -43,6 +44,27 @@ public class Task5 {
                     System.out.print(three + " ");
                 }
                 System.out.println();
+            }
+            System.out.println();
+        }
+    }
+    public static void One(){
+        String[][] board = new String[8][8];
+        System.out.print("Шахматная доска\n");
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if ((i + j) % 2 == 0) {
+                    board[i][j] = "W";
+                } else {
+                    board[i][j] = "B";
+                }
+            }
+        }
+
+        for (String[] row : board) {
+            for (String cell : row) {
+                System.out.print(cell + " ");
             }
             System.out.println();
         }
