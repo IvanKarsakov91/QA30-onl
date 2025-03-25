@@ -9,11 +9,10 @@ public class Task5 {
     public static void Zero(){
         int[][][] array = new int[1][2][3];
 
-        // Заполнение массива случайными числами
         for (int k = 0; k < 1; k++) {
             for (int o = 0; o < 2; o++) {
                 for (int z = 0; z < 3; z++) {
-                    array[k][o][k] = (int) (Math.random() * 10) + 1; // случайные числа от 1 до 10
+                    array[k][o][k] = (int) (Math.random() * 10) + 1;
                 }
             }
         }
